@@ -16,7 +16,7 @@ namespace HW1
         public Product Product { get { return product; } }
 
         public Buy(Product product, int amountOfItems)
-        {
+        {// Не глибока копія
             this.product = product;
             this.amountOfItems = amountOfItems;
 
