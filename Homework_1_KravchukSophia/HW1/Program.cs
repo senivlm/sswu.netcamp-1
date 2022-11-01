@@ -11,13 +11,14 @@
 namespace HW1
 {
     internal class Program
-    {
+    {// Вітаю Вас.  Все доступно.
         static void Main(string[] args)
         {
             Product product1 = new Product("cherry", 14.57, 1.0);
             Product product2= new Product("banana", 17.61, 0.75);
             Buy buy1 = new Buy(product1, 5);
             Buy buy2 = new Buy(product2, 3);
+            //Краще цей масив огорнути класом.
             Buy[] buys = new Buy[] { buy1, buy2 };
             Check firstCheck = new Check(buy1);
             Check secondCheck = new Check(buys);
