@@ -18,7 +18,7 @@ namespace HW1
         public double Weight { get { return weight; } }
 
         public Product(string name, double price, double weight)
-        {
+        {// У Вас можна і від'ємні значення вводити, а це неправильно.
             this.name = name;
             this.price = price;
             this.weight = weight;
