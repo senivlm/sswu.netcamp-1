@@ -90,7 +90,7 @@ namespace Homework_2_KravchukSophia
             for (int j = 0; j < this.columnsNumber; j++) // iterate by column
             {
                 for (int i = 0; i < this.rowsNumber; i++)
-                {
+                {//можна оптимізувати
                     int snakeI = j % 2 == 0 ? i : this.rowsNumber - 1 - i; //going up or down
 
                     this.matrixCanvas[snakeI, j] = numberToPut;
@@ -124,7 +124,7 @@ namespace Homework_2_KravchukSophia
             int numsInDiag = diagonalNumber;
 
             while (numberToPut <= this.rowsNumber * this.columnsNumber)
-            {
+            {//показати на занятті
                 if (diagonalNumber % 2 == 0)
                 {
                     j = diagonalNumber - 1;
