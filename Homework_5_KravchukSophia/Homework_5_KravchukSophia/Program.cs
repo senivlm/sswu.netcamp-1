@@ -5,7 +5,7 @@ namespace Homework_5_KravchukSophia
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { //Ваші бали: 94	135	90	95	100.
             DateTime date1 = new DateTime(2022, 12, 1);
             DateTime date2 = new DateTime(2023, 12, 1);
 
