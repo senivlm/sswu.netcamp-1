@@ -34,7 +34,7 @@ namespace Homework_3_KravchukSophia
         }
 
         public override string ToString()
-        {
+        {// Краще в методі давати чисту інформацію, а згодом, при потребі, декорувати клас. (паттерн декоратор)
             string separator = "---------------------------------------\n";
             return separator + this.product.ToString() + "\n" + separator + "Number of items: " + 
                 this.amountOfItems + "\nPrice: " + this.getFinalPrice()+ "\n";
