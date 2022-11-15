@@ -21,6 +21,8 @@ namespace Homework_4_KravchukSophia
         KG = 1,
         G = 1000
     }
+    
+    //Погоджуюсь.
     public class Cart // Я вирішила не використовувати клас Buy, бо вже не бачу в ньому сенсу. Використовую Dictionary замість нього
     {
         private Dictionary<Product, int> allBuys;
@@ -33,6 +35,7 @@ namespace Homework_4_KravchukSophia
         public Dictionary<Product, int> AllBuys { 
             get 
             {
+                // Не потрібно віддавати в загальне користування всю таблицю.
                 return this.allBuys.ToDictionary(entry => entry.Key, entry => entry.Value);
             } 
         }
