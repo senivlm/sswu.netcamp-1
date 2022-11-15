@@ -38,6 +38,7 @@ namespace Homework_2_Tensor_KravchukSophia
             this.length = 1;
             this.numbersArray = new int[] {number};
         }
+        .// Немає зручної ініціалізації. Через масив - це не дуже зручно. А також зручної індексації з відповідної кількості індексів.
         public Task4Tensor(System.Array array)
         {
             if(array == null)
