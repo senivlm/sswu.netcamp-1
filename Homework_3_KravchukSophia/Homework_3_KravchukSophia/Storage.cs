@@ -18,10 +18,10 @@ using System.Threading.Tasks;
 namespace Homework_3_KravchukSophia
 {
     public class Storage
-    {
+    {// Порушення інкапсуляції
         public List<Product> productsInStorage;
 
-
+//Навіть, якщо поле private це дозволить здійснювати вкладення ззовні в список без належної перевірки.
         public List<Product> ProductsInStorage { 
             get { return productsInStorage; }
             set 
@@ -54,7 +54,7 @@ namespace Homework_3_KravchukSophia
         {
            this.productsInStorage = new List<Product>(products.Count);
             foreach (Product product in products)
-            {
+            {// Не може бути не Product
                 if ((product != null) && product is Product)
                 {
                     this.productsInStorage.Add(product);
@@ -78,7 +78,7 @@ namespace Homework_3_KravchukSophia
             }
         }
         public void AddProduct(Product product)
-        {
+        {// Аналогічно! Також користуйтесь ? та ??.
             if ((product != null) && product is Product)
             {
                 productsInStorage.Add(product);
