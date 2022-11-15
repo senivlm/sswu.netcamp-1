@@ -151,7 +151,7 @@ namespace Homework_4_KravchukSophia
                 return false;
             }
             else
-            {
+            {// Це якись новий алгоритм, про який я не знаю.На які математичні твердження Ви опираєтесь?
                 for (int i = 5; i * i <= num; i += 6)
                 {
                     if (num % i == 0 || num % (i + 2) == 0)
