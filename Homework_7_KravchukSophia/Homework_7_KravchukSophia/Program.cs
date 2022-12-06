@@ -13,7 +13,7 @@
 //5555555555554444
 //MasterСard
     internal class Program
-    {
+    {// 6 задача зауважень не мала і оцінена максимально
         static void Main(string[] args)
         {
             Product cherry = new Product("cherry", 14, 2.0);
