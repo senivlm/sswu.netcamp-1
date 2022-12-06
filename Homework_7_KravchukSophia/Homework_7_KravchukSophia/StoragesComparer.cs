@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 //c. Спільний список товарів, які є на обох складах, без повторів елементів. 
 
 namespace Homework_7_KravchukSophia
-{
+{// слід було використати готові методи Union, Except ...
     public static class StoragesComparer
     {
         public static Dictionary<Product, int> ExclusiveProducts(object a, object b)
