@@ -15,7 +15,7 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {// використовуйте у таких випадках неіменовані змінні та швидку ініціалізацію.
             Product cherry = new Product("cherry", 14, 2.0);
             Product banana = new Product("banana", 17.61, 0.75);
             Product pineapple = new Product("pineapple", 41.23, 1);
@@ -39,6 +39,7 @@
             storage2.AddProduct(chicken);
 
             Console.WriteLine("\tExclusive Products\n");
+            // Невдала назва класу
             Console.WriteLine(ProductsDictToString.StorageDictString(StoragesComparer.ExclusiveProducts(storage1, storage2)) + "\n");
 
             Console.WriteLine("\tProducts In Both Storages\n");
